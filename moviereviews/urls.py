@@ -20,5 +20,6 @@ from movie import views as moviViews
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path("", moviViews.home)
+    path("", moviViews.home),
+    path("about/", moviViews.about)
 ]
