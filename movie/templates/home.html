@@ -9,7 +9,13 @@
             color: aqua;
         }
         a{
+            margin: 5px 0;
             display: block;
+            text-decoration: none;
+            color: inherit;
+        }
+        a:hover{
+            color: aqua;
         }
         .container{
             width: 70%;
@@ -17,20 +23,36 @@
         }
 
         hr{
-            width: 50%;
+            width: 70%;
         }
         span{
-            color: purple;
+            color: rgb(206, 116, 206);
         }
+
+        body{
+            margin: 0;
+            padding: 0;
+        }
+
+        header{
+            padding: 0 15px;
+        }
+
+        footer{
+            padding: 20px;
+            text-align: center;
+        }
+
+        
     </style>
 </head>
 <body>
     <!-- Contenido de la página -->
-    
+    <header>
+        <h1>welcome to home page, <span>{{name}}</span></h1>
+    </header>
     <!-- Etiqueta de encabezado -->
     <div class="container">
-        <h1>welcome to home page, <span>{{name}}</span></h1>
-        <p>mi home page</p>
         <form action="">
             <div class="mb-3">
                 <label for="searchMovie" class="form-label">
@@ -54,7 +76,12 @@
 
         {% endfor %}
     </div>
+
+    <footer>
+        <p>all rigths reserved 2024.</p>
+    </footer>
    
 </body>
+
 
 </html>
