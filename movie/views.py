@@ -13,4 +13,4 @@ def home(request):
     return render(request, 'home.html', {"searchTerm":searchTerm, "movies": movies, "name":"santiago acevedo"})
 
 def about(request):
-    return render(request, "about.html", {"name":"santiago acevedo"})
+    return render(request, "about.html")
