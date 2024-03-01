@@ -25,7 +25,9 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path("", moviViews.home, name="home"),
     path("about/", moviViews.about, name="about"),
-    path("news/", include("news.urls"), name="news")
+    path("news/", include("news.urls"), name="news"),
+    path("statistics/", moviViews.statistics_view, name="statistics"),
+    path("signup/",moviViews.signup ,name="signup")
 ]
 
 urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
